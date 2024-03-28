@@ -30,9 +30,14 @@
 
         }
 
+        .botao_voltar:hover {
+            padding: 0.5rem 1.7rem;
+        }
+
         .botao_voltar img {
-            height: 3rem;
-            width: auto;
+            width: 1.4rem;
+            overflow-clip-margin: content-box;
+            overflow: clip;
         }
 
         .img_produto {
@@ -104,7 +109,7 @@
             font-size: 1.6em;
         }
 
-        .botao_comprar{
+        .botao_comprar {
             text-decoration: none;
             color: #fefefe;
             padding: 0.5rem 1rem;
@@ -112,6 +117,7 @@
             background-color: green;
             border-radius: 0.4rem;
         }
+
         .botao_comprar:hover {
             padding: 0.7rem 1.2rem;
         }
@@ -120,7 +126,7 @@
 
 <body>
     <a class="botao_voltar" href="index.html" title="Voltar">
-        <img src="images/seta_esquerda.png" alt="Icone voltar">
+        <img src="images/seta-esquerda.png" alt="Icone voltar">
         <p>Voltar</p>
     </a>
     <img class="img_produto" src="images/oculos_quest.jpg" alt="Oculos Quest">
@@ -200,6 +206,10 @@
         <dt><b>Resolução:</b></dt>
         <dd>1.832 x 1.920 pixels</dd>
     </dl>
+    <a class="botao_voltar" href="index.html" title="Voltar">
+        <img src="images/seta-esquerda.png" alt="Icone voltar">
+        <p>Voltar</p>
+    </a>
 
 </body>
 
