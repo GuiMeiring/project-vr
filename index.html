@@ -1,200 +1,142 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VR</title>
-    <style>
-        body {
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-items: center;
-            flex-direction: column;
-            background-color: #303030;
-            color: #fefefe;
-            font-size: 62.5%;
-            padding: 0 15%;
-        }
-
-        h1 {
-            font-size: 3.2em;
-        }
-
-        h2 {
-            font-size: 2.4em;
-        }
-
-        h3 {
-            font-size: 1.8em;
-        }
-
-        p {
-            font-size: 1.6em;
-        }
-
-        span {
-            display: block;
-        }
-
-        h1 span {
-            font-weight: normal;
-        }
-
-        strong,
-        b {
-            color: #7E57C2;
-        }
-
-        hr {
-            margin-top: 2rem;
-            border: none;
-            border-top: 0.2rem solid #7E57C2;
-            width: 10rem;
-            height: 0.2rem;
-        }
-
-        ul {
-            width: 60%;
-            padding: 2rem 0;
-            background-color: #383838;
-            list-style-type: none;
-            border-radius: 0.8rem;
-            filter: drop-shadow(15px 5px 5px #7E57C2);
-        }
-
-        ul li,
-        table tr {
-            margin-bottom: 1rem;
-        }
-
-        img {
-            height: auto;
-            width: 50%;
-            object-fit: contain;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        p span {
-            color: green;
-            font-size: 2em;
-        }
-
-        a {
-            text-decoration: none;
-            color: #fefefe;
-            cursor: pointer;
-        }
-
-        ul li a {
-            padding: 0.5rem 1rem;
-            font-size: 2em;
-            background-color: green;
-            border-radius: 0.4rem;
-        }
-
-        ul li a:hover {
-            padding: 0.7rem 1.2rem;
-        }
-    </style>
+    <title>VR Comercios</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/var.css">
+    <link rel="stylesheet" href="style/header-content.css">
+    <link rel="stylesheet" href="style/main-content.css">
 </head>
 
 <body>
-    <h1>Realidade Virtual</h1>
+    <header>
+        <nav class="header_navigation">
+            <div class="header_logo">
+                <img src="images/vr-comercios.png" alt="Logo VR Comercios">
+            </div>
+            <div class="header_section">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="images/arrow-grow-icon.png" alt="Icone em alta">
+                            <p>Em alta</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <img src="images/user-icon.png" alt="Icone usuário">
+                            <p>Conta</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home_section">
+            <img src="images/pink-7499159_1280.jpg" alt="">
+            <div class="info_container">
+                <div class="title_container">
+                    <h1>Realidade <span>Virtual</span></h1>
+                </div>
+                <div class="description_container">
+                    <h2>Bem-vindo à nossa loja de Realidade Virtual!!!</h2>
+                    <p>
+                        <strong>
+                            Somos uma empresa dedicada a proporcionar experiências
+                            incríveis de Realidade Virtual.
+                        </strong>
+                        Trabalhamos com as principais marcas do mercado,
+                        <b>
+                            garantindo qualidade e
+                            satisfação aos nossos clientes.
+                        </b>
+                    </p>
+                </div>
+        </section>
+        <section class="mark_section">
+            <div class="mark_title">
+                <h2>Principais Marcas</h2>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>SONY</p>
+                </div>
+                <div class="grid-item">
+                    <p>MICROSOFT</p>
+                </div>
+                <div class="grid-item">
+                    <p>ASUS</p>
+                </div>
+                <div class="grid-item">
+                    <p>META</p>
+                </div>
+                <div class="grid-item">
+                    <p>VALVE</p>
+                </div>
+                <div class="grid-item">
+                    <p>GOOGLE</p>
+                </div>
+                <div class="grid-item">
+                    <p>SAMSUNG</p>
+                </div>
+                <div class="grid-item">
+                    <p>VIVE</p>
+                </div>
+            </div>
 
-    <h2>
-        Seja Bem vindo a nossa página!
-        <span>
-            A <strong>VR Comércios</strong>
-            oferece uma ampla variedade de produtos de
-            <b>alta qualidade</b> para uso em
-            <b>Realidade Virtual</b>
-        </span>
-    </h2>
-    <p>Confira as principais <b>Marcas</b> que estão em alta</p>
+        </section>
+        <hr>
+        <section class="promotion_section">
+            <h2>APROVEITE NOSSAS PROMOÇÕES</h2>
+            <ul>
+                <li>
+                    <img src="images/oculos_quest.jpg" alt="Imagem Oculos Quest">
+                </li>
+                <li>
+                    <h3>Oculos de Realidade Virtual Oculus Quest 2, 256GB, Branco</h3>
+                </li>
+                <li>
+                    <p>
+                        à vista
+                        <span>
+                            R$ 6.599<sup>92</sup>
+                        </span>
+                        no PIX com 15% desconto
+                    </p>
+                </li>
+                <li>
+                    <a href="produto.html" title="Navegar para página do produto">Comprar</a>
+                </li>
+            </ul>
 
-    <table>
-        <tr>
-            <th>
-                <p>SONY</p>
-            </th>
-            <th>
-                <p>MICROSOFT</p>
-            </th>
-            <th>
-                <p>ASUS</p>
-            </th>
-            <th>
-                <p>META</p>
-            </th>
-        </tr>
-        <tr>
-            <th>
-                <p>VALVE</p>
-            </th>
-            <th>
-                <p>GOOGLE</p>
-            </th>
-            <th>
-                <p>SAMSUNG</p>
-            </th>
-            <th>
-                <p>VIVE</p>
-            </th>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>APROVEITE NOSSAS PROMOÇÕES</h2>
-    <ul>
-        <li>
-            <img src="images/oculos_quest.jpg" alt="Imagem Oculos Quest">
-        </li>
-        <li>
-            <h3>Oculos de Realidade Virtual Oculus Quest 2, 256GB, Branco</h3>
-        </li>
-        <li>
-            <p>
-                à vista
-                <span>
-                    R$ 6.599<sup>92</sup>
-                </span>
-                no PIX com 15% desconto
-            </p>
-        </li>
-        <li>
-            <a href="produto.html" title="Navegar para página do produto">Comprar</a>
-        </li>
-    </ul>
-
-    <ul>
-        <li>
-            <img src="images/playstation-vr.jpg" alt="Imagem Playstation VR">
-        </li>
-        <li>
-            <h3>PlayStation®VR2, 256GB, Branco</h3>
-        </li>
-        <li>
-            <p>
-                à vista
-                <span>
-                    R$ 4.409<sup>99</sup>
-                </span>
-                no PIX com 15% desconto
-            </p>
-        </li>
-        <li>
-            <a href="https://www.playstation.com/pt-br/ps-vr/" target="_blank" title="Navegar para página do produto">
-                Comprar
-            </a>
-        </li>
-    </ul>
+            <ul>
+                <li>
+                    <img src="images/playstation-vr.jpg" alt="Imagem Playstation VR">
+                </li>
+                <li>
+                    <h3>PlayStation®VR2, 256GB, Branco</h3>
+                </li>
+                <li>
+                    <p>
+                        à vista
+                        <span>
+                            R$ 4.409<sup>99</sup>
+                        </span>
+                        no PIX com 15% desconto
+                    </p>
+                </li>
+                <li>
+                    <a href="https://www.playstation.com/pt-br/ps-vr/" target="_blank"
+                        title="Navegar para página do produto">
+                        Comprar
+                    </a>
+                </li>
+            </ul>
+        </section>
 </body>
 
 </html>

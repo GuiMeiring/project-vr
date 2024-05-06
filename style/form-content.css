@@ -1,0 +1,75 @@
+
+
+body{
+    background: linear-gradient(to right, #303030,  #7E57C2);
+    font-size: 62.5%;
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 10vw;
+    background: rgba(0, 0, 0, 0.212);
+    z-index: 1000;
+    border-radius: 50px;
+}
+
+.container h1, .container label, .links a{
+    color: white;
+    font-family:  "Montserrat", sans-serif;
+}
+.container h1 {
+    font-size: 3.0em;
+}
+.container form label{
+    font-size: 1.4em;
+}
+
+.container form input[type="text"], .container form input[type="password"]{
+    width: 100%;
+    padding:0.6rem 1.2rem;
+    margin: 0.6rem 0;
+    box-sizing: border-box;
+    border: 0.18rem solid white;
+    border-radius: 0.4rem;
+    background-color:  transparent;
+    color: white;
+}
+
+.container form input:focus{
+    border-color: #7E57C2;
+    outline:none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.links input{
+    padding: 0.6rem;
+    width: 8rem;
+    font-size: 1.4em;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #fefefe;
+    cursor: pointer;
+    font-family:  "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.links input:hover{
+    padding: 0.8rem;
+}
+
+.links a{
+    font-size: 1.2em;
+}
