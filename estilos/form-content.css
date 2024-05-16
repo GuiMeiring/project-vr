@@ -32,7 +32,7 @@ body{
     font-size: 1.4em;
 }
 
-.container form input[type="text"], .container form input[type="password"]{
+.container form input[type="text"], .container form input[type="password"],  .container form input[type="email"]{
     width: 100%;
     padding:0.6rem 1.2rem;
     margin: 0.6rem 0;

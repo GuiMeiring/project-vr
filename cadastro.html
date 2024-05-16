@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="style/form-content.css">
+    <link rel="stylesheet" href="estilos/form-content.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,12 +14,14 @@
     <div class="container">
         <h1>Criar conta</h1>
         <form action="index.html" method="post" target="_blank">
-            <label for="username">Username:</label><br>
-            <input type="text" id="cpwd" name="username"><br>
-            <label for="pwd">Password:</label><br>
+            <label for="username">Nome:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="pwd">Senha:</label><br>
             <input type="password" id="pwd" name="pwd"><br>
-            <label for="cpwd">Insira a senha novamente</label><br>
-            <input type="text" id="username" name="username"><br><br>
+            <label for="cpwd">Insira a senha novamente: </label><br>
+            <input type="password" id="cpwd" name="cpwd"><br><br>
             <input type="radio" id="termos" name="fav_language" value="Li os termos de uso">
             <label for="termos">Li os termos de uso</label>
             <div class="links">
