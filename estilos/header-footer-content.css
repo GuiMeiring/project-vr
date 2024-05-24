@@ -53,3 +53,18 @@ header{
     height: 1.2rem;
     width: auto;
 }
+
+footer .footer_container{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    padding: 2rem 8.33vw;
+    background-color: var(--dark-color);
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: var(--font-dm-sans);
+    color: var(--light-color);
+    font-size: 1.6em;
+}
