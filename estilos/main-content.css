@@ -99,8 +99,7 @@ hr {
 /*PROMOTION SECTION*/
 
 .promotion_section{
-    padding: 0 8.33vw;
-    margin-top: 5.8rem;
+    padding: 6.4rem 8.33vw 0 8.33vw;
 }
 
 .promotion_section .title_promotion h2{
