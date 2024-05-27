@@ -47,7 +47,6 @@ header{
     gap:0.8rem;
     text-decoration: none; /* Remove o sublinhado */
     color: var(--light-color);
-    font-size: 1.6em;
 }
 .header_section ul li a img{
     height: 1.2rem;
@@ -66,5 +65,4 @@ footer .footer_container{
     transition: 0.3s;
     font-family: var(--font-dm-sans);
     color: var(--light-color);
-    font-size: 1.6em;
 }
