@@ -382,7 +382,7 @@ img{
 }
 
 .price_product_container .price_product_text{
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     display: flex;
     justify-content: space-around;
     line-height: 1.5;
