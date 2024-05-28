@@ -27,6 +27,7 @@ strong, b{
 
 hr {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     border: none;
     border-top: 0.2rem solid #7E57C2;
     width: 10rem;
@@ -44,8 +45,8 @@ img{
     align-items: center;
     padding: 20vh 25vw 5vh 25vw;
     justify-content: center;
-    position: relative; /* Adicionado */
-    overflow: hidden; /* Adicionado */
+    position: relative;
+    overflow: hidden;
 }
 
 .home_section img {
@@ -131,7 +132,7 @@ img{
     grid-gap: 16vw; /* Espaçamento entre as células */
 }
 
-.promotion_grid .grid_product {
+.promotion_grid .grid_promotion_product {
     text-align: center;
     display: flex;
     background-color: var(--dark-color);
@@ -140,11 +141,11 @@ img{
     filter: drop-shadow(15px 5px 5px var(--purple-color));
 }
 
-.product_container {
+.grid_promotion_product .promotion_container {
     width: 100%;
 }
 
-.product_image {
+.promotion_container .promotion_product_image {
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.8rem;
     width: 100%;
@@ -156,7 +157,7 @@ img{
     box-sizing: border-box; /* Inclui o padding dentro da largura total */
 }
 
-.product_image img {
+.promotion_product_image img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ajusta a imagem para preencher o contêiner sem distorção */
@@ -169,7 +170,7 @@ img{
         grid-gap: 3.2rem; /* Ajusta o espaçamento */
     }
 
-    .product_image {
+    .promotion_product_image {
         height: 18rem; /* Ajusta a altura das imagens */
     }
 }
@@ -180,7 +181,7 @@ img{
         grid-gap: 2.4rem; /* Ajusta o espaçamento */
     }
 
-    .product_image {
+    .promotion_product_image {
         height: 26rem; /* Ajusta a altura das imagens */
     }
 }
@@ -191,28 +192,31 @@ img{
         grid-gap: 1.6rem; /* Ajusta o espaçamento */
     }
 
-    .product_image {
+    .promotion_product_image {
         height: 20rem; /* Ajusta a altura das imagens */
     }
 }
 
-.product_container .product_description{
+.promotion_container .promotion_product_description{
     padding: 2rem 1.2rem 3rem 1.2rem;
 }
 
-.product_description p {
+.promotion_product_description p {
     margin-bottom: 2rem;
 }
 
-.product_description p span{
+.promotion_product_description p span{
     display: block;
     color: var(--green-color);
     font-size: 2em;
 }
 
-.product_description a {
+.promotion_product_description a, .price_product_button a{
+    margin-top: 2rem;
     text-decoration: none;
     color: var(--light-color);
+    font-family: var(--font-poppi);
+    font-weight: bold;
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size: 2em;
@@ -220,7 +224,7 @@ img{
     border-radius: 0.4rem;
 }
 
-.product_description a:hover {
+.promotion_product_description a:hover, .price_product_button a:hover{
     padding: 0.7rem 1.2rem;
 }
 
@@ -249,7 +253,6 @@ img{
     width: 100%;
 }
 
-  
 .about_description p{
     flex: 2;
     line-height: 1.5;
@@ -281,3 +284,156 @@ img{
       text-align: center;
     }
   }
+
+
+/*PAGE PRODUCT*/
+
+/*PRODUCT SECTION*/
+
+.product_section{
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 8.33vw 2rem 8.33vw;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden;
+}
+
+.close_button {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--font-poppi);
+    font-weight: bold;
+    background-color: #7E57C2;
+    width: 6.4rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    color: #fefefe;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.close_button img {
+    width: 1.4rem;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.product_section .product_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_section .product_container .product_image {
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+    width: 100%;
+    height: 34rem; /* Altura fixa para as imagens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box; /* Inclui o padding dentro da largura total */
+}
+
+.product_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner sem distorção */
+}
+
+.description_product_container{
+    margin-left:2rem;
+}
+
+@media only screen and (max-width: 1300px) {
+    .product_section .product_container {
+        display: block;
+    }
+    .product_section .product_container .product_image{
+        height: 40rem;
+    }
+    .description_product_container{
+        margin-left:0;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .product_section .product_container .product_image {
+        height: 26rem; /* Ajusta a altura das imagens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product_section .product_container .product_image {
+        height: 20rem; /* Ajusta a altura das imagens */
+    }
+}
+
+.description_product_container .product_title h1{
+    color: var(--light-color);
+    font-family: var(--font-orbitron);
+    font-size: 3.8em;
+    margin-bottom: 2rem;
+}
+
+.price_product_container .price_product_text{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5;
+}
+
+.price_product_text p .avista , .price_product_text p .avista strong{
+    color: var(--green-color);
+    display: block;
+}
+
+
+.price_product_text p .parcelado , .price_product_text p .parcelado strong{
+    color: var(--red-color);
+    display: block;
+}
+
+.price_product_text p .avista strong, .price_product_text p .parcelado strong{
+    font-size: 2em;
+}
+
+/* INFO PRODUCT SECTION */
+.info_product_section{
+    padding: 0 8.33vw;
+}
+
+.info_product_container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--dark-base-color);
+    color: var(--light-color);
+    border: 0.2rem solid var(--purple-color);
+    font-size: 1.4em; /
+}
+th {
+    background-color: var(--purple-color); 
+    border: 0.2rem solid var(--purple-color);
+    padding: 1rem;
+    font-size: 1.6em;
+}
+td {
+    border: 0.2rem solid var(--purple-color);
+    padding: 1rem;
+    font-size: 1.2em;
+}
+ul {
+    font-size: 1.2em;
+}
+
+
+
+     
+
+
+

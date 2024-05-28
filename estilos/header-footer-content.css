@@ -46,6 +46,10 @@ header{
     gap:0.8rem;
     text-decoration: none; /* Remove o sublinhado */
 }
+
+.header_section ul li a p{
+    font-size: 1.3em;
+}
 .header_section ul li a img{
     height: 1.2rem;
     width: auto;
