@@ -50,7 +50,7 @@ header{
 
 @media only screen and (max-width: 550px) {
     .header_navigation .header_section ul {
-        gap: 1rem;
+        gap: 1.5rem;
     }
     .header_navigation .header_logo img{
         height: 4rem;
