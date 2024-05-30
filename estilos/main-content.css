@@ -433,13 +433,17 @@ td {
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1s;
 }
 .show{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-    transition: all 2s;
+    transition: all 1s;
+}
+
+.promotion_grid:nth-child(2){
+    transition-delay: 400ms;
 }
 
 
