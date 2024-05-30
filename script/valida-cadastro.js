@@ -12,7 +12,6 @@ form.addEventListener('submit', (event) => {
     valid &= passwordValidate();
     valid &= cPasswordValidate();
     if (valid) {
-        alert('Formulário enviado com sucesso!');
         form.submit();
     }
 });
@@ -26,7 +25,7 @@ function setError(index) {
 function removeError(index) {
     inputs[index].style.border = '';
     spans[index].style.display = 'none';
-    labels[index].style.color = "#000000";
+    labels[index].style.color = "#f0f0f0";
 }
 
 function usernameValidate() {
