@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="estilos/var.css">
     <link rel="stylesheet" href="estilos/header-footer-content.css">
     <link rel="stylesheet" href="estilos/main-content.css">
+    <link rel="stylesheet" href="estilos/modal-content.css">
 </head>
 
 <body>
@@ -44,6 +45,36 @@
     </header>
 
     <main>
+        <dialog class="formPrice">
+            <h2>Escolha em Quantas Vezes Pagar</h2>
+            <form action="processamento.php" method="post">
+                <div class="select_container">
+                    <label for="qtd" class="labels_required">Quantidade de Parcelas:</label>
+                    <select id="qtd" name="qtd" class="select required installment-select">
+                        <option value="1">À vista</option>
+                        <option value="2">2x sem juros</option>
+                        <option value="3">3x sem juros</option>
+                        <option value="4">4x sem juros</option>
+                        <option value="5">5x sem juros</option>
+                        <option value="6">6x sem juros</option>
+                        <option value="7">7x sem juros</option>
+                        <option value="8">8x sem juros</option>
+                        <option value="9">9x sem juros</option>
+                        <option value="10">10x sem juros</option>
+                        <!-- Adicione mais opções conforme necessário -->
+                    </select>
+    
+                </div>
+                <div class="price_form">
+                    <p id="price_total">
+                    </p>
+                    <p id="price_parcel">
+                    </p>
+                </div>
+                <input type="submit" value="Comfirmar">
+            </form>
+    
+        </dialog>
         <section class="product_section">
             <div class="close_container">
                 <a class="close_button" href="index.html#promotion_section" title="Voltar">
@@ -65,7 +96,7 @@
                             <p>
                                 <span class="avista">
                                     à vista
-                                    <strong> R$ 6599,92</strong>
+                                    <strong> R$ <span id="price">6599,92</span></strong>
                                 </span>
                                 no PIX com 15% desconto
                             </p>
@@ -80,11 +111,9 @@
                             </p>
                         </div>
                         <div class="price_product_button">
-                            <a target="_blank"
-                                href="https://www.pichau.com.br/oculos-de-realidade-virtual-oculus-quest-2-256gb-branco-301-00351-02"
-                                title="Comprar produto">
+                            <button title="Comprar produto">
                                 Comprar
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +189,7 @@
             <p>Guilherme Meiring e Erivaldo Mendes &copy; 2024</p>
         </div>
     </footer>
-
+    <script src="script/dialog.js"></script>
 </body>
 
 </html>

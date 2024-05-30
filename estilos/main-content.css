@@ -211,7 +211,7 @@ img{
     font-size: 2em;
 }
 
-.promotion_product_description a, .price_product_button a{
+.promotion_product_description a, .price_product_button button{
     margin-top: 2rem;
     text-decoration: none;
     color: var(--light-color);
@@ -224,7 +224,7 @@ img{
     border-radius: 0.4rem;
 }
 
-.promotion_product_description a:hover, .price_product_button a:hover{
+.promotion_product_description a:hover, .price_product_button button:hover{
     padding: 0.7rem 1.2rem;
 }
 

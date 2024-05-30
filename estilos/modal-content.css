@@ -1,0 +1,64 @@
+dialog {
+    background: var(--dark-color);
+    text-align: center;
+    padding: 2rem 10vw;
+    border-radius: 20px;
+    border:0;
+}
+
+dialog h2, form label {
+    font-family: var(--font-poppi);
+}
+
+
+dialog fom {
+    width: 100%;
+}
+
+form label{
+    font-size: 1.6em;
+    color: var(--light-color);
+}
+
+form select {
+    width: 100%;
+    padding: 0.6rem 1.2rem;
+    box-sizing: border-box;
+    border: 0.18rem solid white;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: var(--light-color);
+
+}
+
+select option{
+    color: var(--light-color);
+    background: var(--dark-color);
+}
+
+form select:focus{
+    border-color: var(--purple-color);
+    outline:none;
+}
+
+form .select_container:focus-within label {
+    color: var(--purple-color); /* Altere a cor do label quando o input estiver focado */
+}
+
+form select option:focus{
+    background: var(--purple-color);
+
+}
+
+.price_form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+}
+
+.price_form p span{
+    display: block;
+    color:var(--purple-color);
+    font-weight: bold;
+}
