@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="header_navigation">
             <div class="header_logo">
@@ -43,41 +44,40 @@
             </div>
         </nav>
     </header>
-    <dialog>
-        <h2>Escolha em Quantas Vezes Pagar</h2>
-        <form action="index.html" method="post">
-            <div class="select_container">
-                <label for="qtd" class="labels_required">Quantidade de Parcelas:</label>
-                <select id="qtd" name="qtd" class="installment-select">
-                    <option value="0">Pix</option>
-                    <option value="1">À vista</option>
-                    <option value="2">2x sem juros</option>
-                    <option value="3">3x sem juros</option>
-                    <option value="4">4x sem juros</option>
-                    <option value="5">5x sem juros</option>
-                    <option value="6">6x sem juros</option>
-                    <option value="7">7x sem juros</option>
-                    <option value="8">8x sem juros</option>
-                    <option value="9">9x sem juros</option>
-                    <option value="10">10x sem juros</option>
-                    <option value="11">11x sem juros</option>
-                    <option value="12">12x sem juros</option>
-                </select>
-
-            </div>
-            <div class="price_form">
-                <p id="price_total"></p>
-                <p id="price_result"></p>
-            </div>
-            <div class="links">
-                <input class="confirm_modal" type="submit" title="Confirmar compra" value="Confirmar">
-                <input class="close_modal" type="submit" title="Cancelar compra" value="Cancelar">
-            </div>
-        </form>
-
-    </dialog>
 
     <main>
+        <dialog>
+            <h2>Escolha em Quantas Vezes Pagar</h2>
+            <form action="index.html" method="post">
+                <div class="select_container">
+                    <label for="qtd" class="labels_required">Quantidade de Parcelas:</label>
+                    <select id="qtd" name="qtd" class="installment-select">
+                        <option value="0">Pix</option>
+                        <option value="1">À vista</option>
+                        <option value="2">2x sem juros</option>
+                        <option value="3">3x sem juros</option>
+                        <option value="4">4x sem juros</option>
+                        <option value="5">5x sem juros</option>
+                        <option value="6">6x sem juros</option>
+                        <option value="7">7x sem juros</option>
+                        <option value="8">8x sem juros</option>
+                        <option value="9">9x sem juros</option>
+                        <option value="10">10x sem juros</option>
+                        <option value="11">11x sem juros</option>
+                        <option value="12">12x sem juros</option>
+                    </select>
+                </div>
+                <div class="price_form">
+                    <p id="price_total"></p>
+                    <p id="price_result"></p>
+                </div>
+                <div class="links">
+                    <input class="confirm_modal" type="submit" title="Confirmar compra" value="Confirmar">
+                    <input class="close_modal" type="submit" title="Cancelar compra" value="Cancelar">
+                </div>
+            </form>
+        </dialog>
+
         <section class="product_section">
             <div class="close_container">
                 <a class="close_button" href="index.html#promotion_section" title="Voltar">
@@ -87,7 +87,7 @@
             </div>
             <div class="product_container">
                 <picture class="product_image">
-                    <img src="imagens/oculos_quest.jpg" alt="Oculos Quest">
+                    <img src="imagens/oculos-quest.jpg" alt="Oculos Quest">
                 </picture>
                 <div class="description_product_container">
                     <div class="product_title">
@@ -121,9 +121,10 @@
                     </div>
                 </div>
             </div>
-
         </section>
+
         <hr>
+
         <section class="info_product_section">
             <div class="info_product_container">
                 <div class="info_product_title">
@@ -184,7 +185,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -192,7 +192,8 @@
             <p>Guilherme Meiring e Erivaldo Mendes &copy; 2024</p>
         </div>
     </footer>
-    <script src="script/dialog.js"></script>
+
+    <script src="scripts/dialog.js"></script>
 </body>
 
 </html>
