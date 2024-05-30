@@ -41,7 +41,8 @@ header{
 }
 
 .header_section ul li a p{
-    font-size: 1.3em;
+    font-family: var(--font-poppi);
+    font-size: 1.4em;
 }
 .header_section ul li a img{
     height: 1.2rem;
@@ -75,6 +76,10 @@ footer .footer_container{
     background-color: var(--dark-color);
     font-weight: bold;
     transition: 0.3s;
-    font-family: var(--font-dm-sans);
     color: var(--light-color);
+}
+
+.footer_container p{
+    font-family: var(--font-poppi);
+    font-size: 1.4em;
 }
