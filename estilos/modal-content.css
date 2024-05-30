@@ -59,10 +59,18 @@ form .price_form{
 .price_form p span{
     display: block;
     margin-top: 0.5rem;
-    color:var(--green-color);
     font-weight: bold;
     font-size: 1.6em;
 }
+
+.price_form #price_total span {
+    color: var(--red-color);
+}
+
+.price_form #price_result span {
+    color: var(--green-color);
+}
+
 form .links {
     display: flex;
     justify-content: space-around;

@@ -47,13 +47,15 @@ function calculateInstallment() {
 
 
 // Ao clicar no botão "Confirmar", fecha o modal, exibe um alerta de confirmação e redireciona para a página inicial
-confirmButton.onclick = function (){
+confirmButton.onclick = function (event){
+    event.preventDefault();
     modal.close();
-    alert("Compra realizada! A VR Comercios agradece a preferência!!");
+    alert("Compra realizada! A VR Comercios agradece pela preferência!!");
     window.location.href = 'index.html';
 }
 
 // Ao clicar no botão "Cancelar", fecha o modal
-closeButton.onclick = function (){
+closeButton.onclick = function (event){
+    event.preventDefault();
     modal.close();
 }
