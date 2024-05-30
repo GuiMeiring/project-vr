@@ -17,23 +17,39 @@
 <body>
     <div class="container">
         <h1>Criar conta</h1>
-        <form action="index.html" method="post" target="_self">
-            <label for="username">Nome:</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="email">Email: </label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="pwd">Senha:</label><br>
-            <input type="password" id="pwd" name="pwd"><br>
-            <label for="cpwd">Insira a senha novamente: </label><br>
-            <input type="password" id="cpwd" name="cpwd"><br><br>
-            <input type="radio" id="termos" name="fav_language" value="Li os termos de uso">
-            <label for="termos">Li os termos de uso</label>
+        <form id="form" action="index.html" method="post" target="_self">
+            <div class="input_container">
+                <label for="username" class="labels_required">Nome:</label>
+                <input type="text" id="username" name="username" class="inputs required">
+                <span class="span_required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div class="input_container">
+                <label for="email" class="labels_required">Email: </label>
+                <input type="email" id="email" name="email" class="inputs required">
+                <span class="span_required">Digite um email válido</span>
+            </div>
+            <div class="input_container">
+                <label for="pwd" class="labels_required">Senha:</label>
+                <input type="password" id="pwd" name="pwd" class="inputs required">
+                <span class="span_required">Digite uma senha com no mínimo 8 caracteres</span>
+            </div>
+            <div class="input_container">
+                <label for="cpwd" class="labels_required">Insira a senha novamente: </label>
+                <input type="password" id="cpwd" name="cpwd" class="inputs required">
+                <span class="span_required">As senhas não coincidem</span>
+            </div>
+            <div class="radio_container">
+                <input type="radio" id="terms" name="terms" required>
+                <label for="terms">Li os termos de uso</label>
+            </div>
             <div class="links">
                 <input type="submit" title="Criar conta" value="Criar">
                 <a href="login.html" title="Voltar para página login">voltar</a>
             </div>
         </form>
     </div>
+
+    <script src="script/valida-cadastro.js"></script>
 </body>
 
 </html>

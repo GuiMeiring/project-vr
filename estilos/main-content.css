@@ -414,7 +414,7 @@ img{
     background-color: var(--dark-base-color);
     color: var(--light-color);
     border: 0.2rem solid var(--purple-color);
-    font-size: 1.4em; /
+    font-family: var(--font-poppi);
 }
 th {
     background-color: var(--purple-color); 
@@ -425,7 +425,7 @@ th {
 td {
     border: 0.2rem solid var(--purple-color);
     padding: 1rem;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 

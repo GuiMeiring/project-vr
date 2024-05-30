@@ -14,18 +14,23 @@
 <body>
     <div class="container">
         <h1>Olá, seja Bem vindo!</h1>
-        <form action="index.html" method="post" target="_self">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="pwd">Password:</label><br>
-            <input type="password" id="pwd" name="pwd"><br><br>
+        <form id="form" action="index.html" method="post" target="_self">
+            <div class="input_container">
+                <label for="username" class="labels_required">Username:</label><br>
+                <input type="text" id="username" name="username" class="inputs required">
+                <span class="span_required">Usuário inválido</span>
+            </div>
+            <div class="input_container">
+                <label for="pwd" class="labels_required">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" class="inputs required">
+                <span class="span_required">Senha inválida</span>
+            </div>
             <div class="links">
                 <input type="submit" title="Fazer login" value="Login">
-                <a href="cadastro.html" title="Criar conta">Não possue conta?</a>
+                <a href="cadastro.html" title="Criar conta">Não possui conta?</a>
             </div>
         </form>
     </div>
-
 </body>
 
 </html>

@@ -7,13 +7,6 @@ header{
     width: 100%;
     z-index: 100;
 }
-/*
-@media only screen and (max-width: 886px) {
-    .header_navigation .header_section {
-        display: none;
-    }
-}
-*/
 
 .header_navigation {
     display: flex;
@@ -53,6 +46,23 @@ header{
 .header_section ul li a img{
     height: 1.2rem;
     width: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .header_navigation .header_section ul {
+        gap: 1rem;
+    }
+    .header_navigation .header_logo img{
+        height: 4rem;
+        width: auto;
+    }
+    .header_section ul li a img{
+        height: 0.8rem;
+        width: auto;
+    }
+    .header_section ul li a{
+        gap:  0.4rem;
+    }
 }
 
 footer .footer_container{

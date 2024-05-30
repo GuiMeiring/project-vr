@@ -26,14 +26,21 @@ body{
 .container h1 {
     font-size: 3.0em;
 }
-.container form label{
+
+.container form{
+    width: 100%;
+}
+form .input_container, form .radio_container{
+    margin-top: 1rem;
+}
+
+.input_container label, .radio_container label{
     font-size: 1.6em;
 }
 
-.container form input[type="text"], .container form input[type="password"],  .container form input[type="email"]{
+.container .inputs{
     width: 100%;
     padding:0.6rem 1.2rem;
-    margin: 0.6rem 0;
     box-sizing: border-box;
     border: 0.18rem solid white;
     border-radius: 0.4rem;
@@ -47,6 +54,18 @@ body{
     outline:none;
 }
 
+form .input_container:focus-within label {
+    color: var(--purple-color); /* Altere a cor do label quando o input estiver focado */
+}
+
+form .span_required{
+    font-family: var(--font-poppi);
+    color: var(--red-color);
+    font-size: 1.4em;
+    display: none;
+    text-align: left;
+    margin: 0.2rem 0 0 0.1rem;
+}
 .links {
     display: flex;
     justify-content: space-between;
@@ -72,5 +91,6 @@ body{
 
 .links a{
     color: var(--purple-color);
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
+
