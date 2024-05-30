@@ -29,7 +29,7 @@ hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
     border: none;
-    border-top: 0.2rem solid #7E57C2;
+    border-top: 0.2rem solid var(--purple-color);
     width: 10rem;
     height: 0.2rem;
 }
@@ -218,14 +218,14 @@ img{
     font-family: var(--font-poppi);
     font-weight: bold;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.8rem;
     font-size: 2em;
     background-color: var(--green-color);
     border-radius: 0.4rem;
 }
 
 .promotion_product_description a:hover, .price_product_button button:hover{
-    padding: 0.7rem 1.2rem;
+    padding: 1rem 2rem;
 }
 
 /*ABOUT SECTION*/
@@ -307,15 +307,18 @@ img{
     align-items: center;
     font-family: var(--font-poppi);
     font-weight: bold;
-    background-color: #7E57C2;
+    background-color: var(--purple-color);
     width: 6.4rem;
-    padding: 0.5rem;
+    padding: 0.8rem 1.8rem;
     border-radius: 0.4rem;
-    color: #fefefe;
+    color: var(--light-color);
     margin: 1rem 0;
     cursor: pointer;
 }
 
+.close_button:hover{
+    padding: 1rem 2rem;
+}
 .close_button img {
     width: 1.4rem;
     overflow-clip-margin: content-box;

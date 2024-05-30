@@ -45,12 +45,13 @@
     </header>
 
     <main>
-        <dialog class="formPrice">
+        <dialog>
             <h2>Escolha em Quantas Vezes Pagar</h2>
-            <form action="processamento.php" method="post">
+            <form action="index.html" method="post">
                 <div class="select_container">
                     <label for="qtd" class="labels_required">Quantidade de Parcelas:</label>
-                    <select id="qtd" name="qtd" class="select required installment-select">
+                    <select id="qtd" name="qtd" class="installment-select">
+                        <option value="0">Pix</option>
                         <option value="1">À vista</option>
                         <option value="2">2x sem juros</option>
                         <option value="3">3x sem juros</option>
@@ -61,19 +62,21 @@
                         <option value="8">8x sem juros</option>
                         <option value="9">9x sem juros</option>
                         <option value="10">10x sem juros</option>
-                        <!-- Adicione mais opções conforme necessário -->
+                        <option value="11">10x sem juros</option>
+                        <option value="12">10x sem juros</option>
                     </select>
-    
+
                 </div>
                 <div class="price_form">
-                    <p id="price_total">
-                    </p>
-                    <p id="price_parcel">
-                    </p>
+                    <p id="price_total"></p>
+                    <p id="price_result"></p>
                 </div>
-                <input type="submit" value="Comfirmar">
+                <div class="links">
+                    <input class="confirm_modal" type="submit" title="Confirmar compra" value="Confirmar">
+                    <input class="close_modal" type="submit" title="Cancelar compra" value="Cancelar">
+                </div>
             </form>
-    
+
         </dialog>
         <section class="product_section">
             <div class="close_container">
@@ -96,14 +99,14 @@
                             <p>
                                 <span class="avista">
                                     à vista
-                                    <strong> R$ <span id="price">6599,92</span></strong>
+                                    <strong> R$ <span id="price_avista">6599.92</span></strong>
                                 </span>
                                 no PIX com 15% desconto
                             </p>
                             <p>
                                 <span class="parcelado">
                                     parcelado
-                                    <strong> R$ 7764,61</strong>
+                                    <strong> R$ <span id="price_parcelado">7764.61</span></strong>
                                     em até 12x de R$ 647,05</sup>
                                 </span>
                                 sem juros no cartão
@@ -111,7 +114,7 @@
                             </p>
                         </div>
                         <div class="price_product_button">
-                            <button title="Comprar produto">
+                            <button class="open_modal" title="Comprar produto">
                                 Comprar
                             </button>
                         </div>
